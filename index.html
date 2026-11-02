@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish-Developer Portfolio</title>
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            padding: 0 6%;
+            background-color: rgb(18, 18, 62);
+            box-sizing: border-box;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.02;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 130px 0;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+
+            font-size: 3rem;
+
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+
+
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px;
+            margin-left: 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        
+/* Desktop */
+.menu-toggle {
+    display: none;
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 16px;
+        height: 70px;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav .right {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgb(18, 18, 62);
+        z-index: 1000;
+    }
+
+    nav .right.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 12px 0;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ashish's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Ashish</span>
+                <div>and I am a passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="icons8-html-5-48.png" alt="HTML">
+
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+
+                    <div class="vertical-desc">
+                        An HTML Developer is responsible for creating the
+                        structure of websites using HTML. They build web
+                        pages by organizing text, images, links, forms, and
+                        other elements. HTML developers work with CSS and
+                        JavaScript to create attractive, responsive, and
+                        user-friendly websites.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="icons8-nodejs-48.png" alt="Node.js">
+
+                    <div class="vertical-title">
+                        Node.js Developer
+                    </div>
+
+                    <div class="vertical-desc">
+                        A Node.js Developer is responsible for developing
+                        fast and scalable server-side applications using
+                        Node.js. They build APIs, manage databases, and
+                        handle server-side logic. Node.js developers create
+                        efficient web applications that can process
+                        multiple requests smoothly.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="icons8-css-logo-48.png" alt="CSS">
+
+                    <div class="vertical-title">
+                        CSS Developer
+                    </div>
+
+                    <div class="vertical-desc">
+                        A CSS developer styles the visual layout of websites using colors, fonts, and layouts. They
+                        create responsive designs that work perfectly on mobiles, tablets, and desktops. They also
+                        ensure the website looks consistent across all web browsers.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="icons8-javascript-48.png" alt="JavaScript">
+
+                    <div class="vertical-title">
+                        JavaScript Developer
+                    </div>
+
+                    <div class="vertical-desc">
+                        A JavaScript developer writes code to make websites interactive, dynamic, and functional. They
+                        handle features like drop-down menus, pop-ups, forms, and live content updates
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="icons8-c-programming-48.png" alt="C Language">
+
+                    <div class="vertical-title">
+                        C Language Developer
+                    </div>
+
+                    <div class="vertical-desc">
+                        A C language developer writes low-level system code to build core software and applications.
+                        They develop systems like operating systems, embedded software, databases, and compiler tools.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="icons8-python-48.png" alt="Python">
+
+                    <div class="vertical-title">
+                        Python Developer
+                    </div>
+
+                    <div class="vertical-desc">
+                        A Python developer writes clean code to build web applications, software, and automation
+                        scripts. They work extensively in advanced fields like data science, artificial intelligence,
+                        and machine learning
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Ashish's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>© 2026 Ashish Singh. All rights reserved.</li>
+                    <li>Designed & Built with passion</li>
+                    <li><a href="#about">About</a> | <a href="#projects">Projects</a> | <a href="#contact">Contact</a>
+                    </li>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+
+            </div>
+            <div class="footer-fourth">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
